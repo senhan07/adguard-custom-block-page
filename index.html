@@ -1,0 +1,72 @@
+<html lang="en"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Site Blocked</title>
+    <link rel="shortcut icon" href="./favicon.ico">
+    <meta name="theme-color" content="#0c0c0f">
+    <link href="./style.css" rel="stylesheet">
+  </head>
+  <body class="has-animations is-loaded">
+	
+    <div id="root" class="body-wrap">
+      <header class="site-header reveal-from-bottom is-revealed">
+        <div class="container">
+          
+        </div>
+      </header>
+      <main class="site-content">
+        <section class="hero section center-content illustration-section-01">
+          <div class="container-sm">
+            <div class="hero-inner section-inner">
+              <div class="hero-content">
+                <h1 class="mt-0 mb-16 reveal-from-bottom is-revealed" data-reveal-delay="200">
+                  <span>Oops, Site blocked</span>
+                </h1>
+                <div class="container-xs">
+                  <p class="m-0 mb-32 reveal-from-bottom is-revealed" data-reveal-delay="400" style="color:#232323">This site is blocked due to content filtering. Site may contain content harmful, illegal, or malicious to your computer.</p>
+                  <div class="reveal-from-bottom mb-8 is-revealed" data-reveal-delay="600">
+                    <div class="button-group">
+                      <a class="button button-primary button-wide-mobile" href="javascript:history.back()">Go back</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="site-footer center-content-mobile">
+        <div class="container">
+          <div class="site-footer-inner">
+            <div class="footer-top space-between text-xxs">
+              <div class="brand">
+                <h1 class="m-0">
+                  <a href="https://adguard.com">
+				  <img src="./logo.png" style="width: 3em">
+                  </a>
+                </h1>
+              </div>
+            </div>
+            <div class="footer-bottom space-between text-xxs invert-order-desktop">
+              <nav class="footer-nav">
+                <ul class="list-reset">
+                  <li></li>
+                  <li>
+                    <a href="https://dns1.cloudn.home" target="_blank" rel="noopener noreferrer">Admin Settings 
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="footer-copyright">Protected by Adguard Home <br>Accessed on: <span id="datetime">17/04/2022 21:14:13</span> </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  
+
+<script>
+var dt = new Date();
+document.getElementById("datetime").innerHTML = (("0"+dt.getDate()).slice(-2)) +"/"+ (("0"+(dt.getMonth()+1)).slice(-2)) +"/"+ (dt.getFullYear()) +" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2)) +":"+ (("0"+dt.getSeconds()).slice(-2));
+</script>
+</body></html>
